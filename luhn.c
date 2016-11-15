@@ -4,15 +4,18 @@
 
 int check_number(char *number)
 {
-    int i, sum, ch, num, twoup;
+    int i, sum, ch, num, twoup, len;
 
+    len = strlen(number);
     sum = 0;
     twoup = 0;
-    for (i = strlen(number) - 1; i >= 0; --i) {
+    for (i = len - 1; i >= 0; --i) {
         ch = number[i];
         num = (ch >= '0' && ch <= '9') ? ch - '0' : 0;
-        if (twoup) num += num;
-        if (num > 9) num = (num / 10) + (num % 10);
+        if (twoup) {
+            num += num;
+            if (num > 9) num = (num % 10) + 1;
+        }
         sum += num;
         twoup = ++twoup & 1;
     }
@@ -23,15 +26,18 @@ int check_number(char *number)
 
 int calc_digit(char *number)
 {
-    int i, sum, ch, num, twoup;
+    int i, sum, ch, num, twoup, len;
 
+    len = strlen(number);
     sum = 0;
     twoup = 1;
-    for (i = strlen(number) - 1; i >= 0; --i) {
+    for (i = len - 1; i >= 0; --i) {
         ch = number[i];
         num = (ch >= '0' && ch <= '9') ? ch - '0' : 0;
-        if (twoup) num += num;
-        if (num > 9) num = (num / 10) + (num % 10);
+        if (twoup) {
+            num += num;
+            if (num > 9) num = (num % 10) + 1;
+        }
         sum += num;
         twoup = ++twoup & 1;
     }
