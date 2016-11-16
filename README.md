@@ -7,7 +7,12 @@ For an excellent description of the Luhn algorithm refer to the Wikipedia page h
 
 Test credit card account numbers can be found here: https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm.
 
-Bruce D. Lightner
-La Jolla, California, USA
-lightner@lightner.net
+_You may distribute and/or use for any purpose modified or unmodified copies of this software._
+
+_THIS SOFTWARE IS PROVIDED AS IS AND COMES WITH NO WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED.
+IN NO EVENT WILL THE AUTHOR BE LIABLE FOR ANY DAMAGES RESULTING FROM THE USE OF THIS SOFTWARE._
+
+Bruce D. Lightner,
+La Jolla, California, USA,
+lightner@lightner.net,
 http://www.lightner.net/bruce/
